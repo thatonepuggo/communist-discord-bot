@@ -1,4 +1,4 @@
-# ccp bot
+# communist bot
 this bot tracks when users have expressed dislike towards the Chinese Communist Party.
 
 ## run
