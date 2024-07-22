@@ -46,7 +46,7 @@ phrases = [
 
     Phrase(r"remove all enemies of %articles%? state", 900),
 
-    Phrase(r"tiananmen square", -10000),
+    Phrase(r"tiananmen", -10000),
     Phrase(r"1989", -10000),
     Phrase(r"1984", -1000),
 
