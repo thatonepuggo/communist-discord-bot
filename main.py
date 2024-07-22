@@ -37,7 +37,7 @@ async def credit(ctx: Context):
     user = db.get_user_by_discord_id(ctx.author.id)
     social_credit = user.social_credit
     if social_credit != 0:
-        await ctx.reply(f"You currently have {social_credit} credit.")
+        await ctx.reply(f"You currently have {social_credit} Social Credit{util.plural(social_credit)}.")
     elif social_credit == 0:
         await ctx.reply(f"{social_credit}! Your execution date is {tomorrow.year}-{tomorrow.month}-{tomorrow.day}.")
     else:
