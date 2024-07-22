@@ -27,7 +27,7 @@ phrases = [
     Phrase(r"%articles%? ?%communism% is %good%", 100),
 
     Phrase(r"i (love|like) %articles%? ?ccp", 100),
-    Phrase(r"i (hate|dislike) %articles%? ?ccp", -100),
+    Phrase(r"i (hate|dislike) %articles%? ?ccp", -100), 
 
     Phrase(r"france", -500),
     Phrase(r"oak", -500),
@@ -36,7 +36,8 @@ phrases = [
     Phrase(r"taiwan is %articles%? ?country", -10000),
 
     Phrase(r"bing chilling", 10),
-    Phrase(r"ching chong", 10),
+    Phrase(r"ching chong", -10),
+    Phrase(r"chink", -10),
 
     Phrase(r"glory to %articles%? ?%communism%", 500),
     Phrase(r"glory to %articles%? ?%capitalism%", -1000),
