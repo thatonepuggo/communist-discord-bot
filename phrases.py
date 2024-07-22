@@ -16,6 +16,8 @@ class Phrase:
             "capitalism": r"(america|capitalism|burgers|imperialism|the west)",
             "bad": r"(bad|horrible|shit|idiot)",
             "good": r"(good|cool|sigma|epic|epik|awesome)",
+            "like": r"(love|like|enjoy)",
+            "dislike": r"(hate|dislike|am not fond of)",
         })
 
     def matches(self, string: str) -> list:
@@ -26,8 +28,11 @@ phrases = [
     Phrase(r"%articles%? ?%communism% is %bad%", -100),
     Phrase(r"%articles%? ?%communism% is %good%", 100),
 
-    Phrase(r"i (love|like) %articles%? ?ccp", 100),
-    Phrase(r"i (hate|dislike) %articles%? ?ccp", -100), 
+    Phrase(r"i %like% %articles%? ?%communism%", 100),
+    Phrase(r"i %dislike% %articles%? ?%communism%", -100),
+
+    Phrase(r"i %like% %articles%? ?%capitalism%", -100),
+    Phrase(r"i %dislike% %articles%? ?%capitalism%", 100), 
 
     Phrase(r"france", -500),
     Phrase(r"oak", -500),
