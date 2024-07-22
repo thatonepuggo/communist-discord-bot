@@ -16,7 +16,7 @@ class Phrase:
             "capitalism": r"(america|capitalism|burgers|imperialism|the west)",
             "bad": r"(bad|horrible|shit|idiot)",
             "good": r"(good|cool|sigma|epic|epik|awesome)",
-            "like": r"(love|like|enjoy)",
+            "like": r"(love|like|enjoy|am fond of)",
             "dislike": r"(hate|dislike|am not fond of)",
         })
 
